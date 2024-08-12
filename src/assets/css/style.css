@@ -1,0 +1,176 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+#empty {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#empty>p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#addForm {
+  margin: 20px 0;
+}
+
+#addTask {
+  width: 440px;
+  height: 38px;
+  padding: 16px;
+  border: 2px solid hsl(272.8, 66.4%, 62%);
+  border-radius: 8px;
+  color: hsl(273, 44.7%, 39%);
+  font-size: 16px;
+}
+
+#addTask:focus {
+  outline: none;
+  border: 2px solid hsl(272.8, 66.4%, 42%);
+}
+
+#addForm>button {
+  background-color: hsl(272.8, 66.4%, 62%);
+  color: white;
+  font-size: 17px;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  border: none;
+  transition: ease-out 80ms;
+}
+
+#addForm>button:hover {
+  cursor: pointer;
+  background-color: hsl(272.8, 66.4%, 52%);
+}
+
+.taskDiv {
+  margin-top: 15px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid hsl(272.8, 66.4%, 62%);
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  height: 19px;
+  width: 19px;
+  border: 2px solid hsl(272.8, 66.4%, 62%);
+  accent-color: hsl(272.8, 66.4%, 62%);
+
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.checkbox:checked+.task {
+  text-decoration: line-through;
+}
+
+.task {
+  width: 400px;
+  border: none;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.task:focus {
+  outline: none;
+  border: none;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  display: flex;
+}
+
+.deleteButton:hover {
+  cursor: pointer;
+  filter: invert(39%) sepia(92%) saturate(6225%) hue-rotate(350deg) brightness(86%) contrast(124%);
+}
+
+.deleteButton>img {
+  height: 27px;
+}
+
+.editForm {
+  margin-top: 5px;
+}
+
+.editInput {
+  outline: none;
+  padding: 6px;
+  border: 2px solid hsl(272.8, 66.4%, 62%);
+  border-radius: 8px;
+  color: hsl(273, 44.7%, 39%);
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.editInput:focus {
+  outline: none;
+  border: 2px solid hsl(272.8, 66.4%, 42%);
+}
+
+.updateButton {
+  background: none;
+  border: none;
+  display: flex;
+}
+
+.updateButton:hover {
+  cursor: pointer;
+  filter: invert(45%) sepia(98%) saturate(2248%) hue-rotate(163deg) brightness(96%) contrast(104%);
+}
+
+.updateButton>img {
+  height: 24px;
+}
+
+.updateButtonConfirm {
+  background: none;
+  border: none;
+  display: flex;
+  margin-right: 10px;
+}
+
+.updateButtonConfirm:hover {
+  cursor: pointer;
+  filter: invert(66%) sepia(74%) saturate(489%) hue-rotate(65deg) brightness(106%) contrast(105%);
+}
+
+.updateButtonConfirm>img {
+  height: 26px;
+}
+
+.updateButtonCancel {
+  background: none;
+  border: none;
+  display: flex;
+}
+
+.updateButtonCancel:hover {
+  cursor: pointer;
+  filter: invert(39%) sepia(92%) saturate(6225%) hue-rotate(350deg) brightness(86%) contrast(124%);
+}
+
+.updateButtonCancel>img {
+  height: 27px;
+}
